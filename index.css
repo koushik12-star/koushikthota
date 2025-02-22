@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.discount{
+    background-color: #e91e63;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.unitComb {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header {
+    text-align: center;
+    color: #e91e63;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.highlight {
+    border-color: #e91e63;
+    background-color: #fff5f7;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.dropdown {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.features{
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.features1{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d81b60;
+}
+
+.hidden {
+    display: none;
+}
+
+.freeDev {
+    color: #e91e63;
+    text-align: center;
+}
+
+#unit2Box {
+    position: relative;
+}
+
+#unit2Box::before {
+    content: "most popular";
+    background-color: #e91e63;
+    position: relative;
+    top: -16px;
+    padding: 8px 27px;
+    color: white;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: #d81b60 5px 2px 5px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .unitComb {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .dropdown {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 8px;
+    }
+}
+
+.standPr{
+    margin-top: 5px;
+}
